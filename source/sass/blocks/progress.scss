@@ -1,0 +1,106 @@
+.progress {
+    background: rgb(248, 248, 248);
+    &__content {
+        max-width: 1420px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    &__list {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        text-align: center;
+        border-right: 1px solid rgb(217, 217, 217);
+        padding-right: 50px;
+        padding-left: 20px;
+    }
+
+    &__item:last-child {
+        border: none;
+    }
+
+    &__sum {
+        color: #00AE00;
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    &__text {
+        color: #000000;
+        font-family: Oswald;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 100%;
+        margin: 10px 0 0;
+    }
+
+    @media screen and (max-width: 1320px) {
+        &__sum {
+            font-size: 55px;
+        }
+
+        &__text {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (max-width: 1150px) {
+        &__list {
+            padding: 50px 0;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__item {
+            border-right: none;
+            border-bottom: 1px solid rgb(217, 217, 217);
+            max-width: 490px;
+            width: 100%;
+            padding: 0 0 20px 0;
+        }
+
+        &__text {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__content {
+            padding: 0px 45px;
+        }
+
+        &__sum {
+            font-size: 48px;
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+        &__list {
+            padding: 40px 0;
+        }
+
+        &__text {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        &__content {
+            padding: 0 35px;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        &__text {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.selected {
+    .buy__content {
+        padding-top: 0;
+    }
+
+    .machine__titles {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        color: rgb(26, 26, 26);
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 140%;
+        margin: 0 0 30px;
+    }
+
+    &__text {
+        color: rgb(26, 26, 26);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 0 0 40px;
+    }
+
+    &__img-first {
+        margin-bottom: 40px;
+    }
+    
+
+    @media screen and (max-width: 768px) {
+        .machine__titles {
+            margin-bottom: 30px;
+        }
+       
+
+    }
+
+    @media screen and (max-width: 390px) {
+        &__title {
+            font-size: 22px;
+        }
+       
+    }
+}

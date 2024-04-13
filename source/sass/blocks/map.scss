@@ -1,0 +1,177 @@
+.map {
+    background: linear-gradient(46.09deg, rgb(52, 123, 67) -15.644%, rgb(34, 155, 60) 90.308%);
+
+    &__content {
+        max-width: 1420px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px 0 40px;
+    }
+
+    &__inner {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__info {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: Oswald;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 150%;
+        margin: 0 0 30px;
+    }
+
+    &__phone {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 140%;
+        margin: 0 0 20px;
+    }
+
+    &__phone-link {
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 10px;
+    }
+
+    &__social {
+        margin-bottom: 30px;
+    }
+
+    &__ansver-text {
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 140%;
+        margin: 0 0 20px;
+    }
+
+    &__time {
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 140%;
+        margin: 0;
+    }
+
+    &__image-mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 1880px) {
+        &__image {
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        &__info {
+            padding-top: 40px;
+        }
+    }
+
+    @media screen and (max-width: 1580px) {
+        &__title {
+            font-size: 35px;
+        }
+
+        &__image {
+            max-width: 450px;
+            padding-top: 50px;
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        position: relative;
+        overflow: hidden;
+
+        &__inner {
+            gap: 20px;
+        }
+
+        &__info {
+            padding-top: 30px;
+        }
+
+        &__image {
+            max-width: 693px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 1150px) {
+        &__image {
+            right: -150px;
+
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (max-width: 930px) {
+        &__title {
+            width: 200px;
+        }
+
+        &__info {
+            padding: 40px 0;
+        }
+
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__text,
+        &__ansver-text {
+            font-size: 18px;
+        }
+
+        &__phone-link,
+        &__time {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 810px) {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__image-mobile {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__title {
+            width: 100%;
+        }
+    }
+}

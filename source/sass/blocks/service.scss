@@ -1,0 +1,270 @@
+.service {
+    position: relative;
+    background-image: url(../img/content/slash-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+
+    &__content {
+        max-width: 1420px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 80px 40px;
+        position: relative;
+    }
+
+    &__jivo-link {
+        z-index: 99;
+    }
+
+    &__sticker-mobile {
+        display: none;
+    }
+
+    &__title {
+        color: rgb(0, 0, 0);
+        font-family: Oswald;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 140%;
+        margin: 0 0 44px;
+    }
+
+    &__slider {
+        max-width: 1020px;
+        height: 100%;
+        margin: 0 0 0 70px;
+
+    }
+
+    &__list {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-top: -5px;
+    }
+
+    &__item {
+        max-width: 320px;
+        width: 100%;
+        transition: .2s;
+        height: auto;
+    }
+
+    li {
+        border-left: 0.2px solid rgba(104, 98, 98, 0.1);
+        border-right: 0.2px solid rgba(104, 98, 98, 0.1);
+    }
+
+    li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 10px #7a7878;
+    }
+
+    li:hover>&__slide-link>&__slide-content>&__slide-btn {
+        background: rgb(0, 194, 0);
+    }
+
+
+    &__slide-link {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 0;
+        padding: 30px 20px;
+        box-shadow: 0px 0px 7px rgba(104, 98, 98, 0.5);
+        background: rgb(255, 255, 255);
+    }
+
+    &__slide-content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    &__slide-title {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 130%;
+        margin: 0 0 30px;
+    }
+
+    &__slide-text {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 0 0 10px;
+    }
+
+    &__slide-btn {
+        max-width: 280px;
+        width: 100%;
+        background: rgb(0, 174, 0);
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 140%;
+        padding: 13px;
+        margin-top: auto;
+    }
+
+    .swiper-button-next {
+        right: 170px;
+    }
+
+    .swiper-button-next::after {
+        font-size: 12px;
+        font-weight: 700;
+        color: black;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 9px 13px 9px 12px;
+        background: transparent;
+    }
+
+    .swiper-button-next:hover {
+        opacity: 0.5;
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+    }
+
+    .swiper-button-prev::after {
+        font-size: 12px;
+        font-weight: 700;
+        color: black;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 9px 13px 9px 12px;
+        background: transparent;
+    }
+
+    .swiper-button-prev:hover {
+        opacity: 0.5;
+    }
+
+    @media screen and (max-width: 1790px) {
+        &__slider {
+            max-width: 660px;
+            margin: 0 0 0 120px;
+        }
+
+        .swiper-button-prev {
+            left: 50px;
+        }
+
+        .swiper-button-next {
+            left: 880px;
+        }
+    }
+
+    @media screen and (max-width: 1520px) {
+        &__slider {
+            margin: 0 0 0 140px;
+        }
+
+        .swiper-button-prev {
+            left: 80px;
+        }
+
+        .swiper-button-next {
+            left: 880px;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        &__slider {
+            margin: 0 auto;
+            max-width: 670px;
+        }
+
+        .swiper-button-prev {
+            left: 120px;
+        }
+
+        .swiper-button-next {
+            left: auto;
+            right: 150px;
+        }
+    }
+
+    @media screen and (max-width: 1080px) {
+
+        .swiper-button-prev {
+            left: 50px;
+        }
+
+        .swiper-button-next {
+            left: auto;
+            right: 70px;
+        }
+
+    }
+
+    @media screen and (max-width: 920px) {
+
+        &__slider {
+            margin: 0 auto;
+            max-width: 640px;
+            width: 100%;
+        }
+
+        .swiper-slide {
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .swiper-button-prev {
+            left: 10px;
+        }
+
+        .swiper-button-next {
+            left: auto;
+            right: 10px;
+
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__content {
+            padding: 50px 45px;
+        }
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 740px) {
+        &__slider {
+            max-width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 730px) {
+        &__jivo-link {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        &__title {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        &__content {
+            padding: 40px 35px;
+        }
+    }
+}

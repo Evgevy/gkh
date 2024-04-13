@@ -1,0 +1,126 @@
+.mainly {
+    .machine__titles {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    &__text-one {
+        color: rgb(26, 26, 26);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 0 0 50px;
+        max-width: 967px;
+    }
+
+    &__list {
+        /*display: grid;
+        grid-template-columns: repeat(4, 320px);*/
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 380px;
+        width: 100%;
+    }
+
+    &__item:not(:first-child) {
+        padding-left: 20px;
+    }
+
+    &__item:not(:last-child) {
+        border-right: 1px solid rgb(217, 217, 217);
+        padding-right: 8px;
+    }
+
+    &__title {
+        color: rgb(210, 0, 0);
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 140%;
+        margin: 0 0 10px;
+    }
+
+    &__text {
+        color: rgb(26, 26, 26);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 1300px) {
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 0px;
+        }
+
+        &__item {
+            max-width: 100%;
+        }
+
+        &__item:first-child {
+            padding-right: 10px;
+        }
+
+        &__item:nth-child(2n) {
+            border: none;
+        }
+
+        &__item:nth-child(3n) {
+            padding-left: 0;
+            padding-right: 10px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .machine__titles {
+            margin-bottom: 30px;
+        }
+
+
+        &__text-one {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        &__list {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        &__item {
+            border-right: none !important;
+            padding-left: 0 !important;
+        }
+
+        &__item:not(:last-child) {
+            padding-bottom: 20px;
+            border-bottom:  1px solid rgb(217, 217, 217);
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        &__text-one {
+            font-size: 16px;
+        }
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+} 

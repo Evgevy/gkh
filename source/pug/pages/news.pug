@@ -1,0 +1,27 @@
+extends ../components/base/layout
+
+block variables
+    - const title = "helpgkh"
+    - const wrapperMods = ""
+    - const hasHeader = true
+    - const headerMods = ""
+    - const hasFooter = true
+    - const footerMods = ""
+    - const currentUrl = "news.html"
+
+block main
+    main
+        +breadcrumbs({
+                isStatic: true,
+                list: [
+                    {
+                        href: "#",
+                        text: "Главная"
+                    },
+                    {
+                        href: "#",
+                        text: "Новости"
+                    },
+                ]
+            })
+        +news-page()

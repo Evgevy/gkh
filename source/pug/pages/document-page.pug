@@ -1,0 +1,37 @@
+extends ../components/base/layout
+
+block variables
+    - const title = "helpgkh"
+    - const wrapperMods = ""
+    - const hasHeader = true
+    - const headerMods = ""
+    - const hasFooter = true
+    - const footerMods = ""
+    - const currentUrl = "document-page.html"
+
+block main
+    main
+        +breadcrumbs({
+                isStatic: true,
+                list: [
+                    {
+                        href: "#",
+                        text: "Главная"
+                    },
+                    {
+                        href: "#",
+                        text: "Статьи"
+                    },
+                    {
+                        href: "#",
+                        text: "Новости законодательства ЖКХ"
+                    },
+                    {
+                        href: "#",
+                        text: "Документы для заключения договора на ВДГО/ВКГО"
+                    }
+                ]
+            })
+        +document()
+        +form()
+        +map()

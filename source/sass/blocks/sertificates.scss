@@ -1,0 +1,35 @@
+.sertificates {
+    .machine__titles {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .mainly__text-one {
+        margin-bottom: 40px;
+    }
+
+
+    &__list {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+
+        &__list {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+}

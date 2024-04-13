@@ -1,0 +1,76 @@
+mixin contacts()
+    section.contacts
+        .buy__content 
+            .buy__titles
+                .machine__titles 
+                    h1.machine__title Contáctenos
+                    .machine__line
+                        <svg width="100" height="4" viewBox="0 0 100 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="4" fill="#D20000"/>
+                        </svg>
+            .contacts__inner 
+                .form__form 
+                    h2.form__title ¿Tiene alguna pregunta?
+                    p.form__desc Siempre estamos aquí para ayudarle. Dejeuna solicitud y nuestro especialista se pondrá en contacto con usted lo antesposible
+                    form(method="post")
+                        +custom-input({
+                            label: "Su nombre",
+                            type: "text",
+                            name: "name",
+                            placeholder: "You Name"
+                        }).form__input
+                        .form__box
+                            +custom-input({
+                                label: "Número de teléfono",
+                                type: "tel",
+                                name: "phone",
+                                placeholder: "(___)-___-__-__"
+                            }).form__input
+                            +custom-input({
+                                label: "Correo electrónico",
+                                type: "email",
+                                name: "email-adress",
+                                placeholder: "Email"
+                            }).form__input
+                        +custom-textarea({
+                            label: "Su pregunta",
+                            name: "question",
+                            placeholder: "Message"
+                        }).form__input-text
+                        button(type="submit").form__btn Enviar
+                        p.form__agreement Al hacer clic en el botón “Enviar”, usted acepta la política de procesamiento de datos personales
+                .contacts__info 
+                    ul.contacts__list 
+                        li.contacts__item
+                            p.contacts__name Dirección:
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26 16C26 22.8435 18.3441 27.4086 16.4298 28.4431C16.1606 28.5886 15.8394 28.5886 15.5702 28.4431C13.6559 27.4086 6 22.8435 6 16C6 10 10.8453 6 16 6C21.3333 6 26 10 26 16Z" stroke="#D20000" stroke-width="1.5"/>
+                                <circle cx="15.9974" cy="16" r="4.58333" stroke="#D20000" stroke-width="1.5"/>
+                                </svg>
+                            p.contacts__desc No. 536, Laolu Road, Lingang New Area, China (Shanghai) Pilot Free Trade Zone.
+                        li.contacts__item
+                            p.contacts__name Correo electrónico:
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66406 9.41337L15.8241 17.2667C15.9174 17.3467 16.0774 17.3467 16.1707 17.2667L25.3307 9.41337M4.26406 5.33337H27.7307C28.6107 5.33337 29.3307 6.05337 29.3307 6.93337V23.4667C29.3307 25.2267 27.8907 26.6667 26.1307 26.6667H5.86406C4.10406 26.6667 2.66406 25.2267 2.66406 23.4667V6.93337C2.66406 6.05337 3.38406 5.33337 4.26406 5.33337Z" stroke="#D20000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            a(href="mailto:contact@antsmachine.com").contacts__desc contact@antsmachine.com
+                        li.contacts__item
+                            p.contacts__name Teléfono:
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5742 13.6923L18.2452 22.3077C19.1742 21.2308 25.0581 14.9231 28 23.5385C28 23.5385 27.6903 28 21.342 28C16.8516 28 12.2065 22.6154 8.95486 19.5384C6.16776 16.9231 4 13.5384 4 10.4615C4 4.15382 8.33547 4 8.33547 4C18.2451 7.38462 9.5742 13.6923 9.5742 13.6923Z" stroke="#D20000" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                </svg>
+                            a(href="tel:+8619534031668").contacts__desc +86-19534031668
+                        li.contacts__item
+                            p.contacts__name Línea directa 24 horas:
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.8954 7.44772V13.1046M18.8954 13.1046H24.5523M18.8954 13.1046L26.4379 5.5621M9.5742 13.6923L18.2452 22.3077C19.1742 21.2308 25.0581 14.9231 28 23.5385C28 23.5385 27.6903 28 21.342 28C16.8516 28 12.2065 22.6154 8.95486 19.5384C6.16776 16.9231 4 13.5384 4 10.4615C4 4.15382 8.33547 4 8.33547 4C18.2451 7.38462 9.5742 13.6923 9.5742 13.6923Z" stroke="#D20000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            a(href="tel:+8619534031668").contacts__desc +86-19534031668 
+                        li.contacts__item
+                            p.contacts__name Wechat:
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.6641 10.6667H21.3307M10.6641 14.6667H21.3307M25.3307 21.3333H21.9641C21.5641 21.3333 21.1807 21.5167 20.9307 21.8333L17.0307 26.7C16.4974 27.3667 15.4807 27.3667 14.9474 26.7L11.0474 21.8333C10.7974 21.5167 10.4141 21.3333 10.0141 21.3333H6.66406C4.4474 21.3333 2.66406 19.55 2.66406 17.3333V8C2.66406 5.78333 4.4474 4 6.66406 4H25.3307C27.5474 4 29.3307 5.78333 29.3307 8V17.3333C29.3307 19.55 27.5474 21.3333 25.3307 21.3333Z" stroke="#D20000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            p.contacts__desc ANTISHICNC 
+        .contacts__map
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.743291750464!2d121.5922805534012!3d31.33846190625779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b2752e10c85f91%3A0x7119f4f87891f39a!2sChina%20%EF%BC%88Shanghai%EF%BC%89%20Pilot%20Free%20Trade%20Zone!5e0!3m2!1sru!2sru!4v1709555918878!5m2!1sru!2sru" width="1920" height="600" style="border: none!important;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

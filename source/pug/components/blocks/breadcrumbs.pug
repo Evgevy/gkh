@@ -1,0 +1,11 @@
+mixin breadcrumbs(data)
+  .breadcrumbs&attributes(attributes)
+    .container
+      ul.list-reset.breadcrumbs__list
+        each item in data.list
+          li.breadcrumbs__item
+            if (item.isActive)
+              span.breadcrumbs__link.is-active!=item.text
+            else
+              a.breadcrumbs__link(href=item.href)!=item.text
+            +icon("arrow-b", 16, 16)

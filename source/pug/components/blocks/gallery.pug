@@ -1,0 +1,12 @@
+mixin gallery(data)
+	section.section&attributes(attributes)
+		.container
+			.section__wrapper.section__wrapper_reset
+				.section__heading.gallery__title
+					+icon("icon-figure", 24, 28)
+					h2.title.title--h2!=data.title
+				p.section__paragraph.gallery__paragraph!=data.description
+				ul.section__list.gallery__list
+					each item in data.list
+						li
+							+img(item.path, item.src, item.format, item.width, item.height, item.alt)

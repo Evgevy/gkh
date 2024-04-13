@@ -1,0 +1,38 @@
+.gallery {
+
+	&__title {
+		margin-bottom: 30px;
+
+		@include vp-767 {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__paragraph {
+		max-width: 800px;
+		margin-bottom: 40px;
+
+		@include vp-767 {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		@include vp-767 {
+			row-gap: 40px;
+		}
+
+		li {
+			
+			@include vp-1023 {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+}

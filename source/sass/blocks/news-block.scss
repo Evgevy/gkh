@@ -1,0 +1,85 @@
+.news-block {
+    position: absolute;
+    z-index: 999;
+    background: white;
+    overflow-y: scroll;
+    max-height: 700px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    border-left: 1px solid rgb(232, 232, 232);
+    background: rgb(255, 255, 255);
+
+    &__content {
+        max-width: 340px;
+        width: 100%;
+        margin: 0px auto 0;
+        padding: 20px 20px 60px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__item {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(245, 245, 245);
+    }
+
+    &__title {
+        color: rgb(0, 0, 0);
+        font-family: Oswald;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 140%;
+        margin: 0 0 20px;
+    }
+
+    &__date {
+        color: rgb(104, 104, 104);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 0 0 10px;
+    }
+
+    &__text {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 140%;
+        margin: 0 0 20px;
+    }
+
+    &__link {
+        color: rgb(0, 174, 0);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transition: .2s;
+    }
+
+    &__link:hover {
+        color: rgb(0, 194, 0);
+
+        svg {
+            path {
+                fill: rgb(0, 194, 0);
+            }
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        display: none;
+    }
+}
