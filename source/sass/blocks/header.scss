@@ -272,6 +272,16 @@
   }
 }
 
+.main-nav__sublist.two {
+  max-width: 500px;
+  left: 0;
+  z-index: 1000;
+}
+
+.main-nav__sublist.two>.main-nav__box {
+  width: 250px;
+}
+
 .main-nav__box {
   @media screen and (max-width: 1380px) {
     width: 400px;
@@ -512,6 +522,10 @@
   }
 
   .main-nav__box {
+    width: 100%;
+  }
+
+  .main-nav__sublist.two>.main-nav__box {
     width: 100%;
   }
 

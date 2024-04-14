@@ -1,0 +1,219 @@
+.specialists {
+    &__content {
+        max-width: 1420px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    &__title {
+        color: rgb(0, 0, 0);
+        font-family: Oswald;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 140%;
+        margin: 0 0 40px;
+    }
+
+    &__card-content {
+        max-width: 1420px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 70px 100px 70px 40px;
+    }
+
+    &__card-content.one {
+        padding-top: 0;
+    }
+
+    &__card:nth-child(odd) {
+        background: rgb(248, 248, 248);
+    }
+
+    &__image {
+        float: right;
+        padding-left: 30px;
+    }
+
+    &__image-mobile {
+        display: none;
+    }
+
+    &__name {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 140%;
+        margin: 0 0 20px;
+    }
+
+    &__job-title {
+        color: rgb(0, 174, 0);
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 140%;
+        margin: 0 0 30px;
+    }
+
+    &__spec-list,
+    &__education-list {
+        margin: 0 0 30px 30px;
+    }
+
+    &__spec-item,
+    &__education-item  {
+        list-style: disc;
+    }
+
+    &__spec-title,
+    &__spec-text,
+    &__education-title,
+    &__education-text,
+    &__work-title,
+    &__work-text  {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    &__spec-title,
+    &__education-title,
+    &__work-title {
+        margin: 0 0 20px;
+    }
+
+    &__work {
+        margin: 0;
+    }
+
+    &__spec-text,
+    &__education-text {
+        margin: 0 0 5px;
+    }
+
+    &__work-text {
+        margin: 0 0 10px;
+    }
+
+    &__work-text:last-child {
+        margin: 0;
+    }
+
+    @media screen and (max-width: 1890px) {
+        &__card-content {
+            max-width: 1420px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 70px 200px 70px 40px;
+        }
+    }
+
+    @media screen and (max-width: 1700px) {
+        &__card-content {
+            max-width: 1420px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 70px 320px 70px 40px;
+        }
+    }
+
+    @media screen and (max-width: 1500px) {
+        &__card-content {
+            max-width: 1420px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 70px 350px 70px 40px;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        &__card-content {
+            max-width: 1420px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 70px 40px 70px 40px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__card-content {
+            padding: 50px 40px;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__image-mobile {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        &__name {
+            margin-bottom: 10px;
+        }
+
+        &__job-title {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__content {
+            padding: 0 45px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__card-content {
+            padding: 50px 45px;
+        }
+
+        &__name {
+            font-size: 24px;
+        }
+
+        &__job-title {
+            font-size: 18px;
+        }
+
+        &__spec-list,
+        &__education-list {
+            margin: 0 0 20px 30px;
+        }
+
+        &__spec-title,
+        &__education-title,
+        &__work-title {
+            margin: 0 0 10px;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        &__content {
+            padding: 0 35px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__card-content {
+            padding: 40px 35px;
+        }
+
+        &__name {
+            font-size: 20px;
+        }
+    }
+}

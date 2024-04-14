@@ -5,7 +5,7 @@ mixin header(headerMods, currentUrl)
   header.header(class=headerMods data-header data-media="(max-width: 1023px)")
     .container
       .header__position 
-        a(href="").header__place г. Санкт-Петербург, пр-кт Малоохтинский, д. 68, офис 505
+        a(href="contacts.html").header__place г. Санкт-Петербург, пр-кт Малоохтинский, д. 68, офис 505
         .header__social-link 
           a(href="#")
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@ mixin header(headerMods, currentUrl)
             span
           .main-nav__menu
             .header__position--mobile 
-              a(href="").header__place г. Санкт-Петербург, пр-кт Малоохтинский, д. 68, офис 505
+              a(href="contacts.html").header__place г. Санкт-Петербург, пр-кт Малоохтинский, д. 68, офис 505
               .header__social-link 
                 a(href="#")
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,8 +97,42 @@ mixin header(headerMods, currentUrl)
               <li class="main-nav__item menu-item-has-children">
                 <a class="main-nav__link" href="#">Статьи</a>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">О нас</a>
+              <li class="main-nav__item menu-item-has-children">
+                <a class="main-nav__link main-nav__link-jump" href="#">О нас
+                  <svg width="9" height="5" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.44845 0.453369L5.29512 0.453369L1.55512 0.453369C0.915119 0.453369 0.595119 1.2267 1.04845 1.68004L4.50179 5.13337C5.05512 5.6867 5.95512 5.6867 6.50845 5.13337L7.82178 3.82004L9.96179 1.68004C10.4085 1.2267 10.0885 0.453369 9.44845 0.453369Z" fill="#0C0C0C"/>
+                  </svg>
+                </a>
+                  <ul class="main-nav__sublist two">
+                    <div class="main-nav__box">
+                      <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="#">Клиенты</a>
+                      </li>
+                      <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="#">Отзывы</a>
+                      </li>
+                      <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="#">Специалисты</a>
+                      </li>
+                      <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="#">Достижения</a>
+                      </li>
+                    </div>
+                    <div class="main-nav__box">
+                      <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="#">Наши партнеры</a>
+                      </li>
+                      <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="#">Наши Юристы в СМИ</a>
+                      </li>
+                      <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="#">Отчет о текущей деятельности</a>
+                      </li>
+                      <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="#">Уставы ТСЖ/ЖСК</a>
+                      </li>
+                    </div>
+                  </ul>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">Образцы документов</a>

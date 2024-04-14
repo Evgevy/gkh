@@ -236,6 +236,13 @@
         }
     }
 
+    @media screen and (max-width: 540px) {
+        &__app-link {
+            margin: 0 0 0 auto;
+        }
+
+    }
+
     @media screen and (max-width: 390px) {
         &__content {
             padding: 0 35px 40px;
